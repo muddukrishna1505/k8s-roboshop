@@ -120,15 +120,15 @@ metadata:
     project: roboshop
     tier: frontend
     component: frontend
-  spec:
-    type: LoadBalancer
-    selector:
-      project: roboshop
-      tier: frontend
-      component: frontend
-    ports:
-      - protocol: TCP
-        port: 80 #service port
-        targetPort: 80 #container port            
+spec:
+  type: LoadBalancer
+  selector:
+    project: roboshop
+    tier: frontend
+    component: frontend
+  ports:
+    - protocol: TCP
+      port: 80 #service port
+      targetPort: 80 #container port            
               
 
